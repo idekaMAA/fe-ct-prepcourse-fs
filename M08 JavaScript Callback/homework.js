@@ -66,12 +66,7 @@ function filter(arrayOfStrings) {
    // Debes identificar todos los elementos el arreglo que comiencen con la letra "a".
    // Luego retorna un nuevo arreglo con estos elementos.
    // Tu código:
-   var nuevA= [];
-   for (var i = 0; i<arrayOfStrings.length; i++){
-      if (arrayOfStrings[i][0]==="a"){
-         nuevA.push(arrayOfStrings[i])
-      }
-   }
+   var nuevA = arrayOfStrings.filter((word)=>word.startsWith("a"));
    return nuevA
 }
 
