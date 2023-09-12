@@ -34,12 +34,9 @@ function sumarArray(arrayOfNumbers, cb) {
    // Este resultado debes pasárselo como argumento al callback recibido.
    // [NOTA]: no debes reotrnar nada.
    // Tu código:
-   var suma = 0
-   for (var i= 0; i<arrayOfNumbers.length; i++) {
-      suma += arrayOfNumbers[i]
-   }
+   var valorI=0;
+   var suma = arrayOfNumbers.reduce((accumulator,valorA)=>accumulator+valorA,valorI)
    cb(suma)
-   
 }
 
 function forEach(array, cb) {
